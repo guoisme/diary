@@ -1,0 +1,37 @@
+<% include header.ejs %>
+<div class="main container">
+  <div class="row">
+    <% for(var i=0,len=diarys.length;i<len;i++) { %>
+  <div class="col-sm-6 col-md-6">
+    <div class="thumbnail">
+      <div class="caption">
+        <p class="text-muted">
+          <span class="dis-inbl ma-r-10">时间：<%= diarys[i].time %></span>
+          <span class="dis-inbl ma-r-10">天气：<span class="icon weather"></span></span>
+        </p>
+        <script>
+           console.log('<%= diarys[i].weather %>'); 
+          switch(parseInt('<%= diarys[i].weather %>')){
+            case 1:
+              $(".weather").addClass("icon-sunny");
+              break;
+            case 2:
+              $(".weather").addClass("icon-cloudy");
+              break;
+             case 3:
+              $(".weather").addClass("icon-rain");
+              break;
+            case 4:
+              $(".weather").addClass("icon-overcast");
+              break;
+          }
+        </script>
+        <p style="overflow:hidden;height:100px;"><%= diarys[i].diary %></p>
+        <p><a href="/diary/u/<%= diarys[i]._id %>" class="btn btn-primary" role="button">修改</a> <a href="#" onclick="/diary/remove/<%= diarys[i]._id %>" class="btn btn-danger" role="button">删除</a></p>
+      </div>
+    </div>
+  </div>
+  <% } %>
+</div>
+</div>
+<% include footer.ejs %>

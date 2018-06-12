@@ -1,0 +1,14 @@
+body{background: url(/img/1.jpg) no-repeat top;background-size: auto auto;background-size: cover;padding-top: 60px;}
+.pa-30{padding:30px;}
+.bg-white{background: #fff;}
+.main{min-height:653px;margin-bottom: 10px;}
+footer{color:#fff;background: #333;padding: 15px;height:50px;text-align: center;}
+.icon{display: inline-block;margin-left: 5px;width: 32px;height:32px;}
+.icon-overcast{background: url(/img/overcast.png) no-repeat;}
+.icon-rain{background: url(/img/rain.png) no-repeat;}
+.icon-cloudy{background: url(/img/cloudy.png) no-repeat;}
+.icon-sunny{background: url(/img/sunny.png) no-repeat;}
+.ma-r-10{margin-right: 10px}
+.ma-rl-10{margin-left: 10px}
+.dis-inbl{display: inline-block;}
+.weather{position: relative;top: 5px;}

@@ -1,0 +1,14 @@
+    <footer>
+        <div class="container">@guoisme</div>
+    </footer>
+     
+    <script>
+     $('.nav li').each(function(){
+      var title=$(this).attr('title');
+      if(title=='<%= name %>'){
+       $(this).addClass('active');
+      }
+     })
+    </script>
+</body>
+</html>
