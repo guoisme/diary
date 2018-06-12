@@ -6,5 +6,6 @@
 ```
 cnpm install
 npm start
+#localhost:2018可访问
 ```
-    +  localhost:2018可访问
+     
